@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://talenthub.labs.it.pens.ac.id/sitemap.xml
