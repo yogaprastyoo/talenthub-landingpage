@@ -1,9 +1,19 @@
+import { Helmet } from "react-helmet-async";
 import { Footer } from "@/components/sections/Footer";
 import { Navigation } from "@/components/sections/Navigation";
 
 export default function PrivacyPolicy() {
   return (
     <>
+      <Helmet>
+        <title>Kebijakan Privasi - TalentHub</title>
+        <meta
+          name="description"
+          content="Kebijakan Privasi TalentHub menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi data pribadi Anda saat menggunakan aplikasi TalentHub."
+        />
+        <link rel="canonical" href="https://talenthub.labs.it.pens.ac.id/privacy" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <Navigation />
       <main className="mx-auto max-w-3xl px-6 py-16 md:py-24">
         <header className="mb-12 border-b border-slate-200 pb-8">
