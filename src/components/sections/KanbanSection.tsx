@@ -288,7 +288,6 @@ export function KanbanSection() {
       return;
     }
 
-    event.preventDefault();
     const touch = event.touches[0];
     touchDrag.clone.style.left = `${touch.clientX - touchDrag.clone.offsetWidth / 2}px`;
     touchDrag.clone.style.top = `${touch.clientY - 30}px`;
