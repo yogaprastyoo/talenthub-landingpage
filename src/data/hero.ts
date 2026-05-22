@@ -13,6 +13,6 @@ export const heroContent: HeroContent = {
   subheadline: "Satu Platform, End-to-End",
   description:
     "Dari job posting, pipeline kandidat, interview scheduling, hingga offer dan onboarding — semua dalam satu sistem yang terhubung.",
-  primaryCta: "Hubungi Kami",
+  primaryCta: "Unduh di Google Play",
   secondaryCta: "Lihat Fitur",
 };

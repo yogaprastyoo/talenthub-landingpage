@@ -3,12 +3,14 @@ export interface CtaContent {
   headline: string;
   subheadline: string;
   primaryCta: string;
+  secondaryCta: string;
 }
 
 export const ctaContent: CtaContent = {
-  label: "Product Plan - Sindika",
-  headline: "Siap Memulai Rekrutmen yang Lebih Terstruktur?",
+  label: "Tersedia di Google Play",
+  headline: "Mulai rekrutmen yang lebih terstruktur, hari ini.",
   subheadline:
-    "Ini adalah product plan - kami siap membahas detail implementasi, timeline, dan penyesuaian fitur sesuai kebutuhan perusahaan Anda.",
-  primaryCta: "Hubungi Kami",
+    "Aplikasi TalentHub sudah dapat diunduh untuk Android. Hubungi kami untuk demo, onboarding tim, atau penyesuaian fitur untuk perusahaan Anda.",
+  primaryCta: "Unduh di Google Play",
+  secondaryCta: "Hubungi Kami",
 };

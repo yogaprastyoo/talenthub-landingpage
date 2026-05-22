@@ -13,9 +13,30 @@ export default function PrivacyPolicy() {
         />
         <link rel="canonical" href="https://talenthub.labs.it.pens.ac.id/privacy" />
         <meta name="robots" content="index, follow" />
+        <meta property="og:url" content="https://talenthub.labs.it.pens.ac.id/privacy" />
+        <meta property="og:title" content="Kebijakan Privasi - TalentHub" />
+        <meta
+          property="og:description"
+          content="Kebijakan Privasi TalentHub menjelaskan pengumpulan, penggunaan, dan perlindungan data pribadi Anda."
+        />
+        <meta property="og:image" content="https://talenthub.labs.it.pens.ac.id/og-image.jpg" />
+        <meta name="twitter:title" content="Kebijakan Privasi - TalentHub" />
+        <meta
+          name="twitter:description"
+          content="Kebijakan Privasi TalentHub menjelaskan pengumpulan, penggunaan, dan perlindungan data pribadi Anda."
+        />
+        <meta name="twitter:image" content="https://talenthub.labs.it.pens.ac.id/og-image.jpg" />
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://talenthub.labs.it.pens.ac.id/"},
+    {"@type": "ListItem", "position": 2, "name": "Kebijakan Privasi", "item": "https://talenthub.labs.it.pens.ac.id/privacy"}
+  ]
+}`}</script>
       </Helmet>
       <Navigation />
-      <main className="mx-auto max-w-3xl px-6 py-16 md:py-24">
+      <main id="main" tabIndex={-1} className="mx-auto max-w-3xl px-6 py-16 md:py-24 focus:outline-none">
         <header className="mb-12 border-b border-slate-200 pb-8">
           <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
             Kebijakan Privasi
@@ -40,7 +61,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="definisi">
             <h2>1. Definisi Istilah</h2>
             <p>
               Untuk memudahkan pemahaman, berikut adalah definisi istilah yang
@@ -96,7 +117,7 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
 
-          <section>
+          <section id="identitas">
             <h2>2. Identitas Pengelola</h2>
             <ul>
               <li>
@@ -119,7 +140,7 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
 
-          <section>
+          <section id="data-dikumpulkan">
             <h2>3. Data yang Kami Kumpulkan</h2>
             <p>
               Kami hanya mengumpulkan data yang diperlukan untuk fungsi inti
@@ -149,7 +170,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="tujuan-penggunaan">
             <h2>4. Tujuan Penggunaan Data</h2>
             <p>Data Anda kami gunakan secara terbatas hanya untuk:</p>
             <ul>
@@ -173,7 +194,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="dasar-hukum">
             <h2>5. Dasar Hukum Pengumpulan Data</h2>
             <p>
               Pengumpulan dan pemrosesan data dilakukan berdasarkan{" "}
@@ -183,7 +204,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="penyimpanan-keamanan">
             <h2>6. Penyimpanan dan Keamanan Data</h2>
             <ul>
               <li>
@@ -212,7 +233,7 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
 
-          <section>
+          <section id="berbagi-data">
             <h2>7. Berbagi Data dengan Pihak Ketiga</h2>
             <p>
               <strong>Saat ini kami tidak menggunakan layanan pihak ketiga
@@ -226,7 +247,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="pengungkapan-khusus">
             <h2>8. Pengungkapan Data dalam Situasi Khusus</h2>
             <p>
               Meskipun kami tidak berbagi data dengan pihak ketiga untuk tujuan
@@ -270,7 +291,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="hak-pengguna">
             <h2>9. Hak Anda sebagai Pengguna</h2>
             <p>
               Sesuai UU PDP, Anda memiliki hak-hak berikut atas data pribadi
@@ -305,7 +326,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="penghapusan-akun">
             <h2>10. Penghapusan Akun dan Retensi Data</h2>
             <p>
               Apabila Anda meminta penghapusan akun, data Anda akan ditandai
@@ -320,7 +341,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="privasi-anak">
             <h2>11. Privasi Anak-anak</h2>
             <p>
               Aplikasi ini ditujukan untuk pengguna berusia minimal 17 tahun
@@ -331,7 +352,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="perubahan-kebijakan">
             <h2>12. Perubahan Kebijakan Privasi</h2>
             <p>
               Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu.
@@ -342,7 +363,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          <section>
+          <section id="kontak">
             <h2>13. Hubungi Kami</h2>
             <p>
               Untuk pertanyaan, keluhan, atau permintaan terkait privasi dan

@@ -1,6 +1,13 @@
+import { contactMailto } from "@/lib/contact";
+
+export interface FooterLink {
+  label: string;
+  href: string;
+}
+
 export interface FooterLinkGroup {
   title: string;
-  links: string[];
+  links: FooterLink[];
 }
 
 export interface FooterContent {
@@ -9,28 +16,37 @@ export interface FooterContent {
   description: string;
   linkGroups: FooterLinkGroup[];
   email: string;
-  social: Array<{
-    label: string;
-    href: string;
-  }>;
+  social: FooterLink[];
   officeTitle: string;
   address: string[];
   copyright: string;
-  legalLinks: string[];
+  legalLinks: FooterLink[];
 }
 
 export const footerContent: FooterContent = {
   monogram: "T",
   wordmark: "TalentHub",
-  description: "Platform rekrutmen end-to-end untuk perusahaan Indonesia yang ingin tumbuh lebih cepat.",
+  description:
+    "Platform rekrutmen end-to-end untuk perusahaan Indonesia yang ingin tumbuh lebih cepat.",
   linkGroups: [
     {
       title: "Product",
-      links: ["Fitur", "Laporan", "Pengguna", "Hubungi Kami"],
+      links: [
+        { label: "Fitur", href: "/#features" },
+        { label: "Laporan", href: "/#reports" },
+        { label: "Pengguna", href: "/#users" },
+        { label: "Tentang", href: "/about" },
+        { label: "Hubungi Kami", href: contactMailto },
+      ],
     },
     {
       title: "Sindika",
-      links: ["Tentang Kami", "Product Plans", "Blog", "Karir", "Kontak"],
+      links: [
+        { label: "Tentang Kami", href: "https://sindika.co.id/en/about/" },
+        { label: "Product Plans", href: "https://sindika.co.id/en/product-plan/" },
+        { label: "Blog", href: "https://sindika.co.id/en/blog/" },
+        { label: "Kontak", href: "https://sindika.co.id/en/contact/" },
+      ],
     },
   ],
   email: "talenthubpdbl@gmail.com",
@@ -45,7 +61,10 @@ export const footerContent: FooterContent = {
     },
   ],
   officeTitle: "Politeknik Elektronika Negeri Surabaya (PENS)",
-  address: ["Jl. Raya ITS, Keputih, Kec. Sukolilo", "Kota Surabaya, Jawa Timur 60111"],
+  address: [
+    "Jl. Raya ITS, Keputih, Kec. Sukolilo",
+    "Kota Surabaya, Jawa Timur 60111",
+  ],
   copyright: "© 2026 Tim C4 TalentHub. All rights reserved.",
-  legalLinks: ["Kebijakan Privasi", "Syarat & Ketentuan"],
+  legalLinks: [{ label: "Kebijakan Privasi", href: "/privacy" }],
 };

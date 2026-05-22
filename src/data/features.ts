@@ -28,12 +28,16 @@ export interface FeatureTab {
   mockupTitle: string;
   columns: FeatureMockupColumn[];
   scores: ScreeningScore[];
+  screenshotSrc?: string;
+  badge?: string;
 }
 
 export const featureTabs: FeatureTab[] = [
   {
     id: "posting-pipeline",
     label: "Posting & Pipeline",
+    badge: "Tersedia sekarang",
+    screenshotSrc: "/screenshots/beranda.webp",
     headline: "Satu tempat untuk semua kandidat Anda",
     description:
       "Dari lamaran masuk hingga kandidat dipindah antar tahap - semua bisa dikerjakan tim tanpa keluar dari platform.",
@@ -94,6 +98,7 @@ export const featureTabs: FeatureTab[] = [
   {
     id: "interview-scoring",
     label: "Interview & Scoring",
+    badge: "Roadmap",
     headline: "Interview lebih rapi, evaluasi lebih konsisten",
     description:
       "Jadwalkan sesi, kirim undangan, dan kumpulkan scorecard standar agar setiap keputusan punya dasar yang jelas.",
@@ -130,6 +135,7 @@ export const featureTabs: FeatureTab[] = [
   {
     id: "reporting-analytics",
     label: "Reporting & Analytics",
+    badge: "Roadmap",
     headline: "Laporan recruitment yang siap dipakai",
     description:
       "Pantau funnel, time-to-hire, sumber kandidat, dan performa rekrutmen tanpa membuat spreadsheet manual.",

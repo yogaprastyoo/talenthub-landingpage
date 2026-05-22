@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ctaContent } from "@/data/cta";
 import { ctaStats } from "@/data/stats";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { contactMailto } from "@/lib/contact";
+import { contactMailto, playStoreUrl } from "@/lib/contact";
 
 export function CtaSection() {
   const ref = useRef<HTMLElement>(null);
@@ -22,8 +22,16 @@ export function CtaSection() {
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="xl" className="min-h-11 w-full sm:w-auto">
-              <a href={contactMailto}>{ctaContent.primaryCta}</a>
+              <a href={playStoreUrl} target="_blank" rel="noreferrer">
+                {ctaContent.primaryCta}
+              </a>
             </Button>
+            <a
+              href={contactMailto}
+              className="inline-flex h-14 min-w-[200px] w-full items-center justify-center rounded-full border border-brand/30 bg-transparent px-10 text-base font-medium text-brand transition-colors hover:border-brand hover:bg-brand/5 sm:w-auto"
+            >
+              {ctaContent.secondaryCta}
+            </a>
           </div>
           <div className="mx-auto mt-8 grid max-w-2xl grid-cols-2 gap-4 sm:inline-flex sm:max-w-none sm:items-center sm:justify-center sm:gap-8 lg:gap-12">
             {ctaStats.map((stat, index) => (

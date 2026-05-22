@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://talenthub.labs.it.pens.ac.id/</loc>
+    <image:image>
+      <image:loc>https://talenthub.labs.it.pens.ac.id/talenthub-logo.svg</image:loc>
+      <image:title>Logo TalentHub</image:title>
+      <image:caption>Logo brand TalentHub - Platform ATS rekrutmen Indonesia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://talenthub.labs.it.pens.ac.id/screenshots/beranda.webp</image:loc>
+      <image:title>Beranda TalentHub - Daftar Job Posting</image:title>
+      <image:caption>Tampilan beranda aplikasi TalentHub menampilkan daftar lowongan pekerjaan dengan filter status (Semua, Draft, Aktif, Ditutup).</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://talenthub.labs.it.pens.ac.id/screenshots/login.webp</image:loc>
+      <image:title>Halaman Login TalentHub</image:title>
+      <image:caption>Tampilan halaman masuk aplikasi TalentHub untuk HR Recruiter, Hiring Manager, dan Pelamar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://talenthub.labs.it.pens.ac.id/screenshots/form-job-posting.webp</image:loc>
+      <image:title>Form Buat Lowongan Pekerjaan - TalentHub</image:title>
+      <image:caption>Form pembuatan lowongan pekerjaan baru dengan stepper 3 tahap (Informasi Umum, Detail Pekerjaan, Pratinjau).</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://talenthub.labs.it.pens.ac.id/og-image.jpg</image:loc>
+      <image:title>TalentHub - Platform ATS Rekrutmen Indonesia</image:title>
+      <image:caption>Open Graph image TalentHub untuk preview share di sosial media.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://talenthub.labs.it.pens.ac.id/about</loc>
+    <image:image>
+      <image:loc>https://talenthub.labs.it.pens.ac.id/talenthub-logo.svg</image:loc>
+      <image:title>Logo TalentHub</image:title>
+    </image:image>
+  </url>
+</urlset>
