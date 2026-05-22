@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "talenthub-landing",
       script: "node_modules/.bin/serve",
-      args: "dist --single --listen 8080 --no-clipboard --no-port-switching",
+      args: "dist --listen 8080 --no-clipboard --no-port-switching",
       interpreter: "none",
       cwd: __dirname,
 
